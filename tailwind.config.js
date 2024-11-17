@@ -8,8 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "theme-gradient": "var(--theme-gradient)",
+        "main-bg-color": "var(--main-bg-color)",
+        "second-bg-color": "var(--second-bg-color)",
+        "secondary-color": "var(--secondary-color)",
+        "primary-color": "var(--primary-color)",
+        "deactive-color": "var(--deactive-color)",
+        "active-color": "var(--active-color)",
+        "offline-user-color": "var(--offline-user-color)",
+      },
+      fontFamily: {
+        "theme-font-family": "var(--theme-font-family)",
       },
     },
   },
