@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         'main-bg-color': 'var(--main-bg-color)',
+        'border-color': 'var(--border-color)',
         'second-bg-color': 'var(--second-bg-color)',
         'secondary-color': 'var(--secondary-color)',
         'primary-color': 'var(--primary-color)',
@@ -67,9 +68,10 @@ module.exports = {
         'theme-font-family': 'var(--theme-font-family)'
       },
       spacing: {
-        '46': '2.875rem',
-        '120': '7.5rem',
-        '200': '12.5rem'
+        '46px': '2.875rem',
+        '120px': '7.5rem',
+        '200px': '12.5rem',
+        '60px': '3.75rem',
       },
       borderRadius: {
         lg: 'var(--radius)',
