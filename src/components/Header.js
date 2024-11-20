@@ -46,7 +46,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="">
-                <Link href="/" className="text-white hover:text-secondary-color transition-all capitalize">
+                <Link href="/user_guide" className="text-white hover:text-secondary-color transition-all capitalize">
                   User Guide
                 </Link>
               </li>
@@ -62,9 +62,21 @@ export default function Header() {
                 <FontAwesomeIcon icon={faBars} />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="!bg-main-bg-color !text-white !border-none">
-                <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">Home</DropdownMenuItem>
-                <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize"> User Guide</DropdownMenuItem>
-                <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">Contact Us</DropdownMenuItem>
+                <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
+                  <Link href="/">
+                    Home
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
+                  <Link href="/user_guide">
+                    User Guide
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
+                  <Link href="/">
+                    Contact Us
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 

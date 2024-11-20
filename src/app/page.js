@@ -11,10 +11,10 @@ export default function Home() {
                 <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
                     <div className="flex flex-col lg:flex-row justify-start md:items-end lg:items-center gap-x-4 gap-y-4 md:justify-between">
                         <div className="w-full lg:w-3/5">
-                            <h1 className="text-4xl md:text-6xl font-semibold mb-3">
+                            <h1 className="text-4xl lg:text-6xl font-semibold mb-3">
                                 Talk to Anyone, Anytime.
                             </h1>
-                            <p className="text-2xl md:text-3xl mb-5">
+                            <p className="text-2xl lg:text-3xl mb-5">
                                 <span className='font-semibold'>TalkShak.com</span> – Free audio and video calls for learning,
                                 teaching, business, entertainment, and meetups. Connect and thrive,
                                 anywhere, anytime!
@@ -157,7 +157,7 @@ export default function Home() {
                                  online chat experience that's anonymous, fun, and all about you!
                             </p>
                             <Link href="/">
-                                <button className="font-medium bg-theme-gradient transition-all capitalize text-white font-semibold h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
+                                <button className="font-medium bg-theme-gradient transition-all capitalize text-white h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                                     Join Now
                                 </button>
                             </Link>

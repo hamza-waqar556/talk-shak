@@ -53,8 +53,13 @@ export default function Footer() {
                   Useful links
                 </h3>
                 <ul>
-                  <li>
+                <li>
                     <Link href="/" className='text-sm sm:text-lg hover:text-secondary-color transition-all'>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/user_guide" className='text-sm sm:text-lg hover:text-secondary-color transition-all'>
                       User Guide
                     </Link>
                   </li>
