@@ -29,8 +29,8 @@ export default function Footer() {
                   src={Logo}
                   alt="Logo"
                   layout="fill"  // This makes the image fill the parent container
-                  objectFit="contain"  // Ensures the image maintains its aspect ratio
-                  className="rounded"  // Optional: any other styling
+                  // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                  className="object-contain"  // Optional: any other styling
                 />
               </div>
               <p className='text-sm sm:text-lg'>
@@ -69,7 +69,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className='text-sm sm:text-lg hover:text-secondary-color transition-all'>
+                    <Link href="/signin_page" className='text-sm sm:text-lg hover:text-secondary-color transition-all'>
                       Sign In
                     </Link>
                   </li>

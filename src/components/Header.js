@@ -28,15 +28,17 @@ export default function Header() {
     <header className="bg-main-bg-color text-white py-4 sticky top-0 z-50 border-b border-border-color">
       <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
         <nav className="flex items-center justify-between">
+          <Link href="/">
           <div className="relative w-32 h-10 md:h-46px md:w-200px ">
             <Image
               src={Logo}
               alt="Logo"
               layout="fill"  // This makes the image fill the parent container
-              objectFit="contain"  // Ensures the image maintains its aspect ratio
-              className="rounded"  // Optional: any other styling
+              // objectFit="contain"  // Ensures the image maintains its aspect ratio
+              className="object-contain"  // Optional: any other styling
             />
           </div>
+          </Link>
 
           <div className="flex items-center gap-4 md:gap-5">
             <ul className="hidden m-0 gap-5 md:flex">
@@ -80,7 +82,7 @@ export default function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link href="/" >
+            <Link href="/signin_page" >
               <button className="bg-theme-gradient transition-all capitalize h-10 md:h-46px w-10 md:w-120px rounded-md flex items-center justify-center gap-1 hover:scale-105 active:scale-95">
                 <span className="" >
                   <FontAwesomeIcon icon={faArrowRightToBracket} />

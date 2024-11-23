@@ -19,7 +19,7 @@ export default function Home() {
                                 teaching, business, entertainment, and meetups. Connect and thrive,
                                 anywhere, anytime!
                             </p>
-                            <Link href="/">
+                            <Link href="/signin_page">
                                 <button className="font-medium bg-theme-gradient transition-all capitalize  h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                                     Join Now
                                 </button>
@@ -31,8 +31,8 @@ export default function Home() {
                                     src="/images/section-1-img.png"
                                     alt="section-1-img"
                                     layout="fill"  // This makes the image fill the parent container
-                                    objectFit="contain"  // Ensures the image maintains its aspect ratio
-                                    className="rounded"  // Optional: any other styling
+                                    // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                                    className="object-contain"  // Optional: any other styling
                                 />
                             </div>
                         </div>
@@ -48,8 +48,8 @@ export default function Home() {
                                     src="/images/section-2-img.png"
                                     alt="section-2-img"
                                     layout="fill"  // This makes the image fill the parent container
-                                    objectFit="contain"  // Ensures the image maintains its aspect ratio
-                                    className="rounded"  // Optional: any other styling
+                                    // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                                    className="object-contain"  // Optional: any other styling
                                 />
                             </div>
                         </div>
@@ -122,8 +122,8 @@ export default function Home() {
                                     src="/images/section-3-img.png"
                                     alt="section-3-img"
                                     layout="fill"  // This makes the image fill the parent container
-                                    objectFit="contain"  // Ensures the image maintains its aspect ratio
-                                    className="rounded"  // Optional: any other styling
+                                    // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                                    className="object-contain"  // Optional: any other styling
                                 />
                             </div>
                         </div>
@@ -139,8 +139,8 @@ export default function Home() {
                                     src="/images/section-4-img.png"
                                     alt="section-4-img"
                                     layout="fill"  // This makes the image fill the parent container
-                                    objectFit="contain"  // Ensures the image maintains its aspect ratio
-                                    className="rounded"  // Optional: any other styling
+                                    // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                                    className="object-contain"  // Optional: any other styling
                                 />
                             </div>
                         </div>
@@ -156,7 +156,7 @@ export default function Home() {
                                 anywhere, anytime, with anyone. Join us at TalkShak for a super cool
                                  online chat experience that's anonymous, fun, and all about you!
                             </p>
-                            <Link href="/">
+                            <Link href="/signin_page">
                                 <button className="font-medium bg-theme-gradient transition-all capitalize text-white h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                                     Join Now
                                 </button>

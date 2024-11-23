@@ -34,8 +34,8 @@ export default function ContactUs() {
                                     src="/images/contact-page-img.png"
                                     alt="contact-page-img"
                                     layout="fill"  // This makes the image fill the parent container
-                                    objectFit="contain"  // Ensures the image maintains its aspect ratio
-                                    className="rounded"  // Optional: any other styling
+                                    // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                                    className="object-contain"  // Optional: any other styling
                                 />
                             </div>
                         </div>

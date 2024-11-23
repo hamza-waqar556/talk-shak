@@ -17,7 +17,7 @@ export default function UserGuide() {
                             <p className="text-2xl lg:text-3xl mb-5">
                                 Connect, learn, and grow with the world’s most versatile calling platform—100% free.
                             </p>
-                            <Link href="/">
+                            <Link href="/signin_page">
                                 <button className="font-medium bg-theme-gradient transition-all capitalize  h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                                     Join Now
                                 </button>
@@ -29,8 +29,8 @@ export default function UserGuide() {
                                     src="/images/user-guide-img.png"
                                     alt="user-guide-img"
                                     layout="fill"  // This makes the image fill the parent container
-                                    objectFit="contain"  // Ensures the image maintains its aspect ratio
-                                    className="rounded"  // Optional: any other styling
+                                    // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                                    className="object-contain"  // Optional: any other styling
                                 />
                             </div>
                         </div>
