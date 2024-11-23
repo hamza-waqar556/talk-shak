@@ -51,7 +51,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="">
-                <Link href="/" className="text-white hover:text-secondary-color transition-all capitalize">
+                <Link href="/contact_us" className="text-white hover:text-secondary-color transition-all capitalize">
                   Contact Us
                 </Link>
               </li>
@@ -73,7 +73,7 @@ export default function Header() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
-                  <Link href="/">
+                  <Link href="/contact_us">
                     Contact Us
                   </Link>
                 </DropdownMenuItem>

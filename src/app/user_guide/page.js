@@ -178,18 +178,18 @@ export default function UserGuide() {
                         </div>
                         <div className="mb-5">
                             <h3 className="text-2xl md:text-3xl font-semibold mb-1">
-                                Can I use Talkshak for business meetings?
+                                Can I use TalkShak for business meetings?
                             </h3>
                             <p className="text-sm md:text-lg">
-                                Absolutely. Talkshak is perfect for professional networking, meetings, and collaborations.
+                                Absolutely. TalkShak is perfect for professional networking, meetings, and collaborations.
                             </p>
                         </div>
                         <div className="">
                             <h3 className="text-2xl md:text-3xl font-semibold mb-1">
-                                What devices can I use Talkshak on?
+                                What devices can I use TalkShak on?
                             </h3>
                             <p className="text-sm md:text-lg">
-                                Talkshak is compatible with all major devices. Simply download the app to get started.
+                                TalkShak is compatible with all major devices. Simply download the app to get started.
                             </p>
                         </div>
                     </div>
