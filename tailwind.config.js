@@ -78,7 +78,35 @@ module.exports = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
-      }
+      },
+      keyframes: {
+        showForm: {
+          '0%, 49%': {
+            "opacity": "0",
+            "z-index": "1",
+
+          },
+          '50%, 100%': {
+            "opacity": "1",
+            "z-index": "5",
+          },
+        },
+        hideForm: {
+          '0%, 49%': {
+            "opacity": "5",
+            "z-index": "1",
+
+          },
+          '50%, 100%': {
+            "opacity": "0",
+            "z-index": "0",
+          },
+        },
+      },
+      animation: {
+        showForm: 'showForm',
+        hideForm: 'hideForm',
+      },
     }
   },
   plugins: [require("tailwindcss-animate")],
