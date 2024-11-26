@@ -32,9 +32,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${getRoboto.className} antialiased`}
       >
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
