@@ -4,9 +4,15 @@ import Image from 'next/image';
 // Import Link component from next
 import Link from 'next/link'
 
+// Importing header and footer from components
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 export default function Home() {
     return (
         <>
+        <Header />
+        
             <section id="banner" className="py-10 md:py-60px bg-main-bg-color text-white">
                 <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
                     <div className="flex flex-col lg:flex-row justify-start md:items-end lg:items-center gap-x-4 gap-y-4 md:justify-between">
@@ -165,6 +171,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     )
 }

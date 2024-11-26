@@ -6,9 +6,14 @@ import Link from 'next/link'
 
 import ContactForm from '../../components/ContactForm';
 
+// Importing header and footer from components
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 export default function ContactUs() {
     return (
         <>
+            <Header />
             <section id="user-guide-banner" className="py-10 md:py-60px bg-white">
                 <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
                     <div className="flex flex-col lg:flex-row justify-start md:items-end lg:items-center gap-x-4 gap-y-4 md:justify-between mb-8 lg:mb-10">
@@ -76,7 +81,7 @@ export default function ContactUs() {
                     </div>
                 </div>
             </section>
-
+            <Footer />
         </>
     )
 }

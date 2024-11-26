@@ -17,10 +17,10 @@ export default function SignUpForm() {
     };
 
     return (
-        <div className="w-full overflow-hidden">
-            <h1 className="text-center  font-semibold text-primary-color text-2xl md:text-4xl mb-8">Sign Up</h1>
-            <div className={!isNextStep ? "block" : "hidden"}>
-                <form>
+        <div className="w-full h-[85%] md:h-full relative overflow-hidden">
+            <h1 className="text-center font-semibold text-primary-color text-3xl md:text-4xl mb-6 sm:mb-8">Sign Up</h1>
+            <div className={`w-full md:right-0 h-full bg-white absolute transition-all ease-in-out duration-700 transform ${isNextStep ? "-translate-x-[120%] md:-translate-x-full md:opacity-0 z-0" : "translate-x-0 md:translate-x-0 md:opacity-100 z-[3]"}`}>
+                <form className="w-full">
                     <div className="h-12 w-full mb-5">
                         <input
                             type="text"
@@ -52,7 +52,7 @@ export default function SignUpForm() {
                     <div className="flex items-center justify-center">
                         <button
                             onClick={handleNextStep}
-                            className="font-semibold text-white bg-theme-gradient transition-all capitalize md:h-46px w-52 rounded-full flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
+                            className="font-semibold text-white bg-theme-gradient transition-all capitalize h-46px w-52 rounded-full flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
                         >
                             Next
                         </button>
@@ -60,8 +60,8 @@ export default function SignUpForm() {
                 </form>
             </div>
 
-            <div className={isNextStep ? "block" : "hidden"}>
-                <form>
+            <div className={`w-full md:right-0 h-full bg-white absolute transition-all ease-in-out duration-700 transform ${isNextStep ? "translate-x-0 md:opacity-100 z-[5] md:animate-showForm" : "translate-x-[120%] md:translate-x-full md:opacity-0 z-[1] md:animate-hideForm"}`}>
+                <form className="w-full">
                     <div className="flex items-center justify-center mb-5">
                         <label >
                             <input type="file" name="" id=""  className="hidden"/>
@@ -86,14 +86,14 @@ export default function SignUpForm() {
                             </option>
                         </select>
                     </div>
-                    <div className="flex items-center justify-between px-4">
+                    <div className="flex items-center justify-between gap-2 px-1 md:px-4">
                         <button
                             onClick={handleBackStep}
-                            className="font-semibold text-white bg-theme-gradient transition-all capitalize md:h-46px w-52 rounded-full flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
+                            className="font-semibold text-white bg-theme-gradient transition-all capitalize h-46px w-32 sm:w-52 rounded-full flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
                         >
                             Back
                         </button>
-                        <button className="font-semibold text-white bg-theme-gradient transition-all capitalize md:h-46px w-52 rounded-full flex items-center justify-center gap-1 hover:scale-105 active:scale-95">
+                        <button className="font-semibold text-white bg-theme-gradient transition-all capitalize h-46px w-32 sm:w-52 rounded-full flex items-center justify-center gap-1 hover:scale-105 active:scale-95">
                             Sign Up
                         </button>
                     </div>
