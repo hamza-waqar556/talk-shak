@@ -29,19 +29,24 @@ export default function Header() {
       <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
         <nav className="flex items-center justify-between">
           <Link href="/">
-          <div className="relative w-32 h-10 md:h-46px md:w-200px ">
-            <Image
-              src={Logo}
-              alt="Logo"
-              layout="fill"  // This makes the image fill the parent container
-              // objectFit="contain"  // Ensures the image maintains its aspect ratio
-              className="object-contain"  // Optional: any other styling
-            />
-          </div>
+            <div className="relative w-32 h-10 md:h-46px md:w-200px ">
+              <Image
+                src={Logo}
+                alt="Logo"
+                layout="fill"  // This makes the image fill the parent container
+                // objectFit="contain"  // Ensures the image maintains its aspect ratio
+                className="object-contain"  // Optional: any other styling
+              />
+            </div>
           </Link>
 
           <div className="flex items-center gap-4 md:gap-5">
             <ul className="hidden m-0 gap-5 md:flex">
+              <li className="">
+                <Link href="/dashboard" className="text-white hover:text-secondary-color transition-all capitalize">
+                  dashboard
+                </Link>
+              </li>
               <li className="">
                 <Link href="/" className="text-white hover:text-secondary-color transition-all capitalize">
                   Home
