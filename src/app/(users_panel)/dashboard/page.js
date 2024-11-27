@@ -10,7 +10,7 @@ export default function DashBoard() {
             <div className="min-w-[300px] w-1/4 bg-main-bg-color h-full">
                 <SidebarLayout />
             </div>
-            <div className="w-3/4 h-full bg-second-bg-color bg-dashboard-bg bg-cover bg-center bg-no-repeat">
+            <div className="w-3/4 h-full bg-second-bg-color">
                 <DashboardHeader />
             </div>
         </div>

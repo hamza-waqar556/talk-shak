@@ -9,9 +9,6 @@ config.autoAddCss = false
 // Importing global css here
 import "./globals.css";
 
-// Importing header and footer from components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const getRoboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -30,11 +27,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${getRoboto.className} antialiased`}
-      >
-        {/* <Header /> */}
+        className={`${getRoboto.className} antialiased`}>
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );
