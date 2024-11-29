@@ -29,7 +29,7 @@ export default function ContactUs() {
                                     Customer Support
                                 </h3>
                                 <p className="text-base lg:text-xl">
-                                    Our support team is available to assist you with any queries, feedback, or technical issues you may encounter on Talkshak. We're just a message away!
+                                    Our support team is available to assist you with any queries, feedback, or technical issues you may encounter on Talkshak. We&apos;re just a message away!
                                 </p>
                             </div>
                         </div>

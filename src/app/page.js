@@ -160,7 +160,7 @@ export default function Home() {
                   you&apos;re ready to go! You can customize your experience by adding
                   interests and connecting your webcam and mic. With TalkShak, chat
                   anywhere, anytime, with anyone. Join us at TalkShak for a super cool
-                  online chat experience that's anonymous, fun, and all about you!
+                  online chat experience that&apos;s anonymous, fun, and all about you!
                 </p>
                 <Link href="/signin_page">
                   <button className="font-medium bg-theme-gradient transition-all capitalize text-white h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
