@@ -9,10 +9,9 @@ const Logo = "/images/logo.png";
 // Import Link component from next
 import Link from 'next/link'
 
-// Importing fontawesomes  icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faFacebookF, faInstagram, faPinterestP, faTelegram, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+// Importing React Icons  icons
+import { FaFacebookF, FaInstagram, FaPinterestP, FaTelegram, FaWhatsapp, FaYoutube } from 'react-icons/fa'; // For brands
+import { FaEnvelope, FaEnvelopeOpen } from 'react-icons/fa'; // For solid icons
 
 
 export default function Footer() {
@@ -85,42 +84,42 @@ export default function Footer() {
                 <li>
                   <Link href="https://www.facebook.com/talkshakcalling" target="_blank" rel="noopener noreferrer">
                     <span className="text-2xl sm:text-3xl w-8 h-8 sm:w-10 sm:h-10 flex items-end p-1 justify-center rounded-full text-white bg-[#039BE5] transition-all hover:scale-105">
-                      <FontAwesomeIcon icon={faFacebookF} />
+                      <FaFacebookF  />
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.instagram.com/talkshakfree/" target="_blank" rel="noopener noreferrer">
                     <span className="text-2xl sm:text-4xl w-8 h-8 sm:w-10 sm:h-10 flex items-center p-1 justify-center rounded-xl bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white transition-all hover:scale-105">
-                      <FontAwesomeIcon icon={faInstagram} />
+                      <FaInstagram />
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.pinterest.com/freetalkshak/" target="_blank" rel="noopener noreferrer">
                     <span className="text-2xl sm:text-3xl w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full text-white bg-[#E60023] transition-all hover:scale-105">
-                      <FontAwesomeIcon icon={faPinterestP} />
+                      <FaPinterestP />
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://whatsapp.com/channel/0029VauTtrlJkK7CAqxAki2J" target="_blank" rel="noopener noreferrer">
                     <span className="text-2xl sm:text-3xl w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full text-white bg-[#40C351] transition-all hover:scale-105">
-                      <FontAwesomeIcon icon={faWhatsapp} />
+                      <FaWhatsapp />
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://t.me/talkshakfree" target="_blank" rel="noopener noreferrer">
                     <span className="text-4xl sm:text-[42px] w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white text-[#1B9DE3] transition-all hover:scale-105">
-                      <FontAwesomeIcon icon={faTelegram} />
+                      <FaTelegram />
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://t.me/talkshakfree" target="_blank" rel="noopener noreferrer">
                     <span className="text-3xl sm:text-[42px] w-8 h-4 sm:w-10 sm:h-4 flex items-center justify-center rounded-full bg-white text-[#E60023] transition-all hover:scale-105">
-                      <FontAwesomeIcon icon={faYoutube} />
+                      <FaYoutube />
                     </span>
                   </Link>
                 </li>
@@ -135,42 +134,42 @@ export default function Footer() {
               <li>
                 <Link href="https://mail.google.com/mail" target="_blank" rel="noopener noreferrer">
                   <span className="text-xl sm:text-2xl w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full text-white bg-[#039BE5] transition-all hover:scale-105">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FaEnvelope />
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                   <span className="text-2xl sm:text-3xl w-8 h-8 sm:w-10 sm:h-10 flex items-end p-1 justify-center rounded-full text-white bg-[#039BE5] transition-all hover:scale-105">
-                    <FontAwesomeIcon icon={faFacebookF} />
+                    <FaFacebookF />
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                   <span className="text-2xl sm:text-4xl w-8 h-8 sm:w-10 sm:h-10 flex items-center p-1 justify-center rounded-xl bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white transition-all hover:scale-105">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FaInstagram />
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
                   <span className="text-2xl sm:text-3xl w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full text-white bg-[#E60023] transition-all hover:scale-105">
-                    <FontAwesomeIcon icon={faPinterestP} />
+                    <FaPinterestP />
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
                   <span className="text-2xl sm:text-3xl w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full text-white bg-[#40C351] transition-all hover:scale-105">
-                    <FontAwesomeIcon icon={faWhatsapp} />
+                    <FaWhatsapp />
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="https://telegram.org/" target="_blank" rel="noopener noreferrer">
                   <span className="text-4xl sm:text-[42px] w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white text-[#1B9DE3] transition-all hover:scale-105">
-                    <FontAwesomeIcon icon={faTelegram} />
+                    <FaTelegram />
                   </span>
                 </Link>
               </li>

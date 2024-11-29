@@ -10,8 +10,8 @@ const Logo = "/images/logo.png";
 import Link from 'next/link'
 
 // Importing fontawesomes  icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRightToBracket, faBars } from '@fortawesome/free-solid-svg-icons'
+import { FaArrowRightToBracket, FaBars } from "react-icons/fa6";
+
 
 // dropdown
 import {
@@ -21,7 +21,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 
 export default function Header() {
   return (
@@ -53,12 +53,12 @@ export default function Header() {
                 </Link>
               </li>
               <li className="">
-                <Link href="/user_guide" className="text-white hover:text-secondary-color transition-all capitalize">
+                <Link href="/user-guide" className="text-white hover:text-secondary-color transition-all capitalize">
                   User Guide
                 </Link>
               </li>
               <li className="">
-                <Link href="/contact_us" className="text-white hover:text-secondary-color transition-all capitalize">
+                <Link href="/contact-us" className="text-white hover:text-secondary-color transition-all capitalize">
                   Contact Us
                 </Link>
               </li>
@@ -66,7 +66,7 @@ export default function Header() {
             {/* This is for mobile screen */}
             <DropdownMenu className="">
               <DropdownMenuTrigger className="border border-primary-color md:hidden h-10 w-10 rounded-md flex items-center justify-center focus-visible:outline-none focus-visible:shadow-none">
-                <FontAwesomeIcon icon={faBars} />
+                <FaBars />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="!bg-main-bg-color !text-white !border-none">
                 <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
@@ -75,22 +75,22 @@ export default function Header() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
-                  <Link href="/user_guide">
+                  <Link href="/user-guide">
                     User Guide
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="hover:text-secondary-color transition-all capitalize">
-                  <Link href="/contact_us">
+                  <Link href="/contact-us">
                     Contact Us
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link href="/signin_page" >
+            <Link href="/accounts" >
               <button className="bg-theme-gradient transition-all capitalize h-10 md:h-46px w-10 md:w-120px rounded-md flex items-center justify-center gap-1 hover:scale-105 active:scale-95">
                 <span className="" >
-                  <FontAwesomeIcon icon={faArrowRightToBracket} />
+                  <FaArrowRightToBracket />
                 </span>
                 <span className='hidden md:block'>
                   Sign In
