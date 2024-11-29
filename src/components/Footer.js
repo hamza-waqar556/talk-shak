@@ -9,7 +9,7 @@ const Logo = "/images/logo.png";
 // Import Link component from next
 import Link from 'next/link'
 
-// Importing React Icons  icons
+// Importing React Icons
 import { FaFacebookF, FaInstagram, FaPinterestP, FaTelegram, FaWhatsapp, FaYoutube } from 'react-icons/fa'; // For brands
 import { FaEnvelope, FaEnvelopeOpen } from 'react-icons/fa'; // For solid icons
 

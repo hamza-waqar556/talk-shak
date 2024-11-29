@@ -25,7 +25,7 @@ export default function Home() {
                   teaching, business, entertainment, and meetups. Connect and thrive,
                   anywhere, anytime!
                 </p>
-                <Link href="/signin_page">
+                <Link href="/accounts">
                   <button className="font-medium bg-theme-gradient transition-all capitalize  h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                     Join Now
                   </button>
@@ -162,7 +162,7 @@ export default function Home() {
                   anywhere, anytime, with anyone. Join us at TalkShak for a super cool
                   online chat experience that&apos;s anonymous, fun, and all about you!
                 </p>
-                <Link href="/signin_page">
+                <Link href="/accounts">
                   <button className="font-medium bg-theme-gradient transition-all capitalize text-white h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                     Join Now
                   </button>
