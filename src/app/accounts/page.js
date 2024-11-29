@@ -30,7 +30,7 @@ export default function SignInPage() {
                             <div className={`w-full md:w-2/4 left-0 h-full p-8 flex items-center flex-col justify-center bg-white absolute transition-all ease-in-out duration-700 transform ${isRightPanelActive ? "translate-x-full md:-translate-x-full md:opacity-0 z-0" : "translate-x-0 md:translate-x-0 md:opacity-100 z-[3]"}`}>
                                 <SignInForm />
                                 <div onClick={handleSignInClick} className={`text-black text-sm block md:hidden mt-5`}>
-                                    I don't have an account! <span className="text-primary-color font-semibold">Sign Up</span>
+                                    I don&apos;t have an account! <span className="text-primary-color font-semibold">Sign Up</span>
                                 </div>
                             </div>
                             <div className={`w-full md:w-2/4 left-0 h-full p-8 flex items-center flex-col justify-center bg-white absolute transition-all ease-in-out duration-700 transform ${isRightPanelActive ? "-translate-x-full md:opacity-100 z-[5] md:animate-showForm" : "-translate-x-full md:translate-x-0 md:opacity-0 z-[1] md:animate-hideForm"}`}>

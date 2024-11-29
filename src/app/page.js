@@ -109,7 +109,7 @@ export default function Home() {
                     <span className="font-semibold">100% Free, Always:</span> No hidden fees or subscriptions. All our features are free, ensuring that everyone can connect without barriers.
                   </li>
                   <li>
-                    <span className="font-semibold">Diverse Purpose, One Platform:</span> TalkShak combines learning, teaching, business, entertainment, and meetups in one place. Whether you're here to gain knowledge, grow your network, or simply relax with friends, we’ve got it all.
+                    <span className="font-semibold">Diverse Purpose, One Platform:</span> TalkShak combines learning, teaching, business, entertainment, and meetups in one place. Whether you&apos;re here to gain knowledge, grow your network, or simply relax with friends, we’ve got it all.
                   </li>
                   <li>
                     <span className="font-semibold">User-Friendly and Accessible:</span> Simple, intuitive, and accessible for everyone. No complex setups—just seamless connections.
@@ -157,7 +157,7 @@ export default function Home() {
                 <p className="text-sm md:text-lg mb-3">
                   Getting started is easy and quick. Just pick your chat mode
                   (text, audio, video or uncensored), agree to our terms, and
-                  you're ready to go! You can customize your experience by adding
+                  you&apos;re ready to go! You can customize your experience by adding
                   interests and connecting your webcam and mic. With TalkShak, chat
                   anywhere, anytime, with anyone. Join us at TalkShak for a super cool
                   online chat experience that's anonymous, fun, and all about you!

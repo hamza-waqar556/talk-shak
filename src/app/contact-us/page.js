@@ -23,7 +23,7 @@ export default function ContactUs() {
                             </h1>
                             <div className="">
                                 <p className="text-base lg:text-xl mb-3">
-                                    We're here to help! If you have questions, need assistance, or just want to connect with us, feel free to reach out through any of the following channels.
+                                    We&apos;re here to help! If you have questions, need assistance, or just want to connect with us, feel free to reach out through any of the following channels.
                                 </p>
                                 <h3 className="text-xl lg:text-2xl mb-3 font-semibold">
                                     Customer Support
