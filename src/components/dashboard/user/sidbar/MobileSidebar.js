@@ -8,7 +8,7 @@ export default function MobileSidebar(props) {
     const setMobileSidebar = props.setSideBarActive;
 
     return(
-        <div className="border-r border-border-color p-3 sm:p-4 ba block md:hidden text-white relative z-10 h-full bg-main-bg-color">
+        <div className="border-r border-border-color p-3 sm:p-4  block lg:hidden text-white relative z-10 h-full bg-main-bg-color">
             <ul className="flex flex-col gap-3 ">
                 <li>
                     <button onClick={() => setMobileSidebar(true)} className="text-base sm:text-xl  w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center border border-primary-color rounded">

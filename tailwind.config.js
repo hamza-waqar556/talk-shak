@@ -12,7 +12,8 @@ module.exports = {
     	},
     	extend: {
     		backgroundImage: {
-    			'theme-gradient': 'var(--theme-gradient)'
+				'dashboard-bg': "url('/images/main_bg_img.png')",
+    			'theme-gradient': 'var(--theme-gradient)',
     		},
     		colors: {
     			'main-bg-color': 'var(--main-bg-color)',

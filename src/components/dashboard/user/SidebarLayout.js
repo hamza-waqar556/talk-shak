@@ -9,8 +9,8 @@ const Logo = "/images/logo.png";
 export default function SidebarLayout() {
     return (
         <>
-            <div className="pt-0 md:pt-7 p-3 md:p-4 h-full">
-                <div className="flex items-center justify-center mb-4 md:mb-5">
+            <div className="pt-0 lg:pt-7 p-3 lg:p-4 h-full">
+                <div className="flex items-center justify-center mb-4 lg:mb-5">
                     <div className="relative h-46px w-200px ">
                         <Image
                             src={Logo}
@@ -23,7 +23,7 @@ export default function SidebarLayout() {
                 </div>
 
                 <Tabs defaultValue="channels" className="w-full">
-                    <TabsList className="mb-4 md:mb-5 bg-transparent flex gap-x-3 px-2 py-3 md:py-4 h-auto border-b border-border-color rounded-none">
+                    <TabsList className="mb-4 lg:mb-5 bg-transparent flex gap-x-3 px-2 py-3 lg:py-4 h-auto border-b border-border-color rounded-none">
                         <TabsTrigger
                             value="channels"
                             className="capitalize text-base md:text-lg flex-grow h-46px flex items-center justify-center rounded-md font-medium data-[state=active]:bg-theme-gradient data-[state=active]:text-white data-[state=inactive]:bg-transparent border border-primary-color data-[state=inactive]:text-white">
