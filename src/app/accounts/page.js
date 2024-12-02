@@ -25,18 +25,18 @@ export default function SignInPage() {
          <Header />
             <div className="bg-[#F5FFFE] py-8">
                 <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
-                    <div className={`flex relative h-[550px] md:h-[500px] overflow-hidden rounded-2xl shadow-lg bg-white ${isRightPanelActive ? "right-panel-active" : ""}`}>
+                    <div className={`flex relative h-[550px] md:h-[600px]  overflow-hidden rounded-2xl shadow-lg bg-white ${isRightPanelActive ? "right-panel-active" : ""}`}>
                         <div className={`w-full  relative h-full flex items-center justify-center bg-white transition-all ease-in-out duration-700 transform ${isRightPanelActive ? "translate-x-full" : ""}`}>
                             <div className={`w-full md:w-2/4 left-0 h-full p-8 flex items-center flex-col justify-center bg-white absolute transition-all ease-in-out duration-700 transform ${isRightPanelActive ? "translate-x-full md:-translate-x-full md:opacity-0 z-0" : "translate-x-0 md:translate-x-0 md:opacity-100 z-[3]"}`}>
                                 <SignInForm />
                                 <div onClick={handleSignInClick} className={`text-black text-sm block md:hidden mt-5`}>
-                                    I don&apos;t have an account! <span className="text-primary-color font-semibold">Sign Up</span>
+                                    I don&apos;t have an account! <span className="text-primary-color font-semibold cursor-pointer">Sign Up</span>
                                 </div>
                             </div>
                             <div className={`w-full md:w-2/4 left-0 h-full p-8 flex items-center flex-col justify-center bg-white absolute transition-all ease-in-out duration-700 transform ${isRightPanelActive ? "-translate-x-full md:opacity-100 z-[5] md:animate-showForm" : "-translate-x-full md:translate-x-0 md:opacity-0 z-[1] md:animate-hideForm"}`}>
                                 <SignUpForm />
                                 <div onClick={handleSignUpClick} className={`text-black text-sm block md:hidden mt-5`}>
-                                    I already have an account! <span className="text-primary-color font-semibold">Sign In</span>
+                                    I already have an account! <span className="text-primary-color font-semibold cursor-pointer">Sign In</span>
                                 </div>
                             </div>
                         </div>

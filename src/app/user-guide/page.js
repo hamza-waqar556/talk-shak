@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 export default function UserGuide() {
     return (
         <>
-             <Header />
+            <Header />
             <section id="user-guide-banner" className="py-10 md:py-60px bg-main-bg-color text-white">
                 <div className="container px-4 md:w-md lg:w-lg xl:w-xl">
                     <div className="flex flex-col lg:flex-row justify-start md:items-end lg:items-center gap-x-4 gap-y-4 md:justify-between">
@@ -20,7 +20,7 @@ export default function UserGuide() {
                                 Essential User Guidelines
                             </h1>
                             <p className="text-2xl lg:text-3xl mb-5">
-                                Connect, learn, and grow with the world’s most versatile calling platform—100% free.
+                                Connect, learn, and grow with the world&rsquo;s most versatile calling platform—100% free.
                             </p>
                             <Link href="/signin_page">
                                 <button className="font-medium bg-theme-gradient transition-all capitalize  h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
@@ -55,7 +55,7 @@ export default function UserGuide() {
                             <p className="text-sm md:text-lg">
                                 <span className='font-semibold'>TalkShak –</span>  Free Video & Audio Calling for Learning, Teaching, Business, and Fun!
                                 <br />
-                                Connect, learn, and grow with the world’s most versatile calling platform—100% free.
+                                Connect, learn, and grow with the world&rsquo;s most versatile calling platform—100% free.
                             </p>
                         </div>
                         <div className="mb-4">
@@ -65,7 +65,7 @@ export default function UserGuide() {
                             <p className="text-sm md:text-lg mb-3">
                                 TalkShak is a free video and audio calling app
                                 designed for people to connect across the globe
-                                for a wide range of purposes. Whether you’re looking
+                                for a wide range of purposes. Whether you&rsquo;re looking
                                 to learn a new skill, teach others, expand your business
                                 network, or just have a fun chat, TalkShak makes it easy
                                 to connect anytime, anywhere.
@@ -152,8 +152,8 @@ export default function UserGuide() {
                                 Testimonials
                             </h3>
                             <p className="text-sm md:text-lg">
-                                TalkShak has completely transformed my online tutoring experience. The calls are smooth, and it’s so easy to use!
-                                With TalkShak, I’ve been able to grow my business network without spending a cent. Great quality and even better features!
+                                TalkShak has completely transformed my online tutoring experience. The calls are smooth, and it&rsquo;s so easy to use!
+                                With TalkShak, I&rsquo;ve been able to grow my business network without spending a cent. Great quality and even better features!
                             </p>
                         </div>
                         <div className="">
