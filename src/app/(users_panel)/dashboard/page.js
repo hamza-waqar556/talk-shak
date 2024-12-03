@@ -21,13 +21,15 @@ export default function DashBoard() {
     // Close the sidebar if clicked outside
     useEffect(() => {
         function handleClickOutside(event) {
+            // If the click is outside the sidebar or not on a child element of the sidebar
             if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
                 setSideBarActive(false); // Close the sidebar
             }
         }
-
+    
         // Add event listener to detect clicks
         document.addEventListener("mousedown", handleClickOutside);
+    
         return () => {
             // Cleanup event listener on component unmount
             document.removeEventListener("mousedown", handleClickOutside);
@@ -37,7 +39,7 @@ export default function DashBoard() {
     return (
         <div
             className={`relative h-screen overflow-hidden flex items-start ${isSideBarActive ? "sidebar-active" : ""
-                }`}
+                }`} onMouseDown={(e) => e.stopPropagation()} 
         >
             {/* Sidebar */}
             <div
