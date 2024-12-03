@@ -49,7 +49,7 @@ export default function SelectCategary() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full font-medium justify-between capitalize bg-second-bg-color text-base p-3 h-auto border-border-color rounded-lg outline-none active:outline-none focus:border-primary-color focus:shadow-none focus:!outline-none focus-visible:outline-none hover:bg-second-bg-color hover:text-white"
+          className="mb-4 lg:mb-5 w-full font-medium justify-between capitalize bg-second-bg-color text-base p-3 h-auto border-border-color rounded-lg outline-none active:outline-none focus:border-primary-color focus:shadow-none focus:!outline-none focus-visible:outline-none hover:bg-second-bg-color hover:text-white"
         >
           {value
             ? categories.find((category) => category.value === value)?.label

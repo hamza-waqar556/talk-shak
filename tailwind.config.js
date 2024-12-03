@@ -64,7 +64,11 @@ module.exports = {
     				'3': 'hsl(var(--chart-3))',
     				'4': 'hsl(var(--chart-4))',
     				'5': 'hsl(var(--chart-5))'
-    			}
+    			},
+				scrollbar: {
+					track: 'var(--main-bg-color)',
+					thumb: 'var(--border-color)',
+				  },
     		},
     		fontFamily: {
     			'theme-font-family': 'var(--theme-font-family)'
@@ -109,4 +113,5 @@ module.exports = {
     	}
     },
 	plugins: [require("tailwindcss-animate")],
+	plugins: [require('tailwind-scrollbar')],
 };

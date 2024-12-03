@@ -35,6 +35,21 @@ body {
   /*----------- Font family ------------------*/
   --theme-font-family: "Roboto", sans-serif;
 }
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb, #12243f) var(--scrollbar-track, transparent);
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 8px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-button {
+    display: none;
+  }
+}
 
 
 
