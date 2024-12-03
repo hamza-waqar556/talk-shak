@@ -3,6 +3,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 // Import Image component from next
 import Image from 'next/image';
 
+// importing channel tabs data 
+import TabChannelArea from "./tab_channel_data/TabChannelArea";
+
 // This is logo image variable
 const Logo = "/images/logo.png";
 
@@ -36,7 +39,7 @@ export default function SidebarLayout() {
                         </TabsTrigger>
                     </TabsList>
                     <TabsContent value="channels" className="text-white">
-                        Channels tab content
+                    <TabChannelArea />
                     </TabsContent>
                     <TabsContent value="friends" className="text-white">
                         friends tab content

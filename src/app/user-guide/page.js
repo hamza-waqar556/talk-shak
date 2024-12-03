@@ -22,7 +22,7 @@ export default function UserGuide() {
                             <p className="text-2xl lg:text-3xl mb-5">
                                 Connect, learn, and grow with the world&rsquo;s most versatile calling platform—100% free.
                             </p>
-                            <Link href="/signin_page">
+                            <Link href="/signin_page" className="w-fit inline-block">
                                 <button className="font-medium bg-theme-gradient transition-all capitalize  h-46px w-40 md:w-52 rounded-md flex items-center justify-center hover:scale-105 active:scale-95 ">
                                     Join Now
                                 </button>
