@@ -4,7 +4,7 @@ import { FaFilter } from 'react-icons/fa';
 
 export default function ChannelsNameFilter() {
     return (
-        <>
+        <div>
             <div className="flex items-center justify-between mb-3 capitalize h-full text-base">
                 <div className="font-medium">
                     all channels
@@ -22,6 +22,6 @@ export default function ChannelsNameFilter() {
                     Science
                 </span>
             </div>
-        </>
+        </div>
     )
 }

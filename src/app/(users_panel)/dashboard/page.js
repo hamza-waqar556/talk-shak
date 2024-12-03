@@ -9,6 +9,9 @@ import DashboardHeader from "@/components/dashboard/user/DashboardHeader";
 // importing mobile sidebar
 import MobileSidebar from "@/components/dashboard/user/sidbar/MobileSidebar";
 
+// importing dashboard content area 
+import DashboardContent from "@/components/dashboard/user/DashboardContent";
+
 import { useState, useRef, useEffect } from "react";
 
 // Importing fontawesomes icons
@@ -66,6 +69,7 @@ export default function DashBoard() {
             {/* Main Content */}
             <div className="w-full lg:w-3/4 h-full bg-second-bg-color bg-dashboard-bg bg-cover bg-center bg-no-repeat">
                 <DashboardHeader />
+                <DashboardContent />
             </div>
         </div>
     );
