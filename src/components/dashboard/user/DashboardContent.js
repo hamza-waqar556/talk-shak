@@ -1,3 +1,6 @@
+// Import Link component from next
+import Link from 'next/link'
+
 // Import Image component from next
 import Image from 'next/image';
 
@@ -11,7 +14,7 @@ import { FaGear } from 'react-icons/fa6';
 export default function DashboardContent() {
     return (
         <div className="h-full p-4 md:p-5 flex items-start flex-wrap gap-5 justify-between">
-            <div className="relative w-full sm:w-2/4 md:w-1/3 bg-main-bg-color p-4 h-60 rounded-lg">
+            <div className="relative w-full md:w-2/4 xl:w-1/3 bg-main-bg-color p-4 h-60 rounded-lg">
                 <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-3">
                         <div className="relative h-10 w-10">
@@ -39,9 +42,11 @@ export default function DashboardContent() {
                     </div>
                 </div>
                 <div className="flex items-start justify-center absolute bottom-4 left-0 w-full">
-                    <button className="py-[6px] text-sm px-5 rounded-lg text-white border border-dashed border-secondary-color transition-all hover:scale-105 active:scale-95">
-                        Join Channel
-                    </button>
+                    <Link href="/dashboard/join-channel" className="w-fit">
+                        <button className="py-[6px] text-sm px-5 rounded-lg text-white border border-dashed border-secondary-color transition-all hover:scale-105 active:scale-95">
+                            Join Channel
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
