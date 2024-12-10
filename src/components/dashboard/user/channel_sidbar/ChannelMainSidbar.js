@@ -6,11 +6,15 @@ import { GrAppsRounded } from "react-icons/gr";
 import { RiFullscreenFill } from "react-icons/ri";
 import { BsChatRightText } from "react-icons/bs";
 
+
 // component for channel sidebar
 import ChannelSidebar from "./ChannelSidebar";
 
 // component for chat sidebar inner content
 import ChatSidebarContent from "./channel_chat_component/ChatSidebarContent";
+
+// component for share sidebar settings
+import ShareSidebarContent from "./channel_share_component/ShareSidebarContent";
 
 export default function ChannelMainSidbar() {
     const [activeSidebar, setActiveSidebar] = useState(null);
@@ -25,53 +29,58 @@ export default function ChannelMainSidbar() {
                 {/* Buttons */}
                 <button
                     onClick={() => handleButtonClick("chat")}
-                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-4xl hover:text-secondary-color transition-all ${activeSidebar === "chat" ? "text-secondary-color" : "text-white "
+                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-3xl md:text-4xl hover:text-secondary-color transition-all ${activeSidebar === "chat" ? "text-secondary-color" : "text-white "
                         }`}
                 >
                     <BsChatRightText />
                 </button>
                 <button
                     onClick={() => handleButtonClick("share")}
-                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-4xl hover:text-secondary-color transition-all ${activeSidebar === "share" ? "text-secondary-color" : "text-white "
+                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-3xl md:text-4xl hover:text-secondary-color transition-all ${activeSidebar === "share" ? "text-secondary-color" : "text-white "
                         }`}
                 >
                     <IoShareSocialOutline />
                 </button>
                 <button
                     onClick={() => handleButtonClick("apps")}
-                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-4xl hover:text-secondary-color transition-all ${activeSidebar === "apps" ? "text-secondary-color" : "text-white "
+                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-3xl md:text-4xl hover:text-secondary-color transition-all ${activeSidebar === "apps" ? "text-secondary-color" : "text-white "
                         }`}
                 >
                     <GrAppsRounded />
                 </button>
                 <button
                     onClick={() => handleButtonClick("settings")}
-                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-4xl hover:text-secondary-color transition-all ${activeSidebar === "settings" ? "text-secondary-color" : "text-white "
+                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-3xl md:text-4xl hover:text-secondary-color transition-all ${activeSidebar === "settings" ? "text-secondary-color" : "text-white "
                         }`}
                 >
                     <IoSettingsOutline />
                 </button>
                 <button
                     onClick={() => handleButtonClick("fullscreen")}
-                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-4xl hover:text-secondary-color transition-all ${activeSidebar === "fullscreen" ? "text-secondary-color" : "text-white "}`}>
+                    className={`w-full h-[60px] md:h-20 2xl:h-[100px] border-b border-border-color flex items-center justify-center text-3xl md:text-4xl hover:text-secondary-color transition-all ${activeSidebar === "fullscreen" ? "text-secondary-color" : "text-white "}`}>
                     <RiFullscreenFill />
                 </button>
             </div>
 
             {/* Sidebars */}
+
+            {/* chat */}
             <ChannelSidebar
                 isOpen={activeSidebar === "chat"}
                 onClose={() => setActiveSidebar(null)}
             >
                 <ChatSidebarContent />
             </ChannelSidebar>
+
+            {/* share */}
             <ChannelSidebar
                 isOpen={activeSidebar === "share"}
                 onClose={() => setActiveSidebar(null)}
             >
-                <h2>Share ChannelSidebar Content</h2>
-                <p>Content for the Share sidebar.</p>
+                <ShareSidebarContent />
             </ChannelSidebar>
+
+            {/* apps */}
             <ChannelSidebar
                 isOpen={activeSidebar === "apps"}
                 onClose={() => setActiveSidebar(null)}
@@ -79,6 +88,8 @@ export default function ChannelMainSidbar() {
                 <h2>Apps ChannelSidebar Content</h2>
                 <p>Content for the Apps sidebar.</p>
             </ChannelSidebar>
+
+            {/* settings */}
             <ChannelSidebar
                 isOpen={activeSidebar === "settings"}
                 onClose={() => setActiveSidebar(null)}

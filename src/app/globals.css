@@ -15,11 +15,9 @@ body {
 
 :root {
   /* Color variables */
-  --theme-gradient: linear-gradient(
-          165deg,
-          rgba(27, 173, 154, 1) 16%,
-          rgba(108, 186, 235, 1) 100%
-  );
+  --theme-gradient: linear-gradient(165deg,
+      rgba(27, 173, 154, 1) 16%,
+      rgba(108, 186, 235, 1) 100%);
   --main-bg-color: #060d22;
   --border-color: #12243f;
   --second-bg-color: #0b132b;
@@ -31,10 +29,12 @@ body {
   --deactive-color: #f31414;
   --active-color: #28a745;
   --offline-user-color: #a5a5a5;
+  --message-bg: #078474;
 
   /*----------- Font family ------------------*/
   --theme-font-family: "Roboto", sans-serif;
 }
+
 @layer utilities {
   .scrollbar-custom {
     scrollbar-width: thin;
@@ -49,6 +49,19 @@ body {
   .scrollbar-custom::-webkit-scrollbar-button {
     display: none;
   }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+  }
+
 }
 
 
@@ -81,6 +94,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -113,6 +127,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

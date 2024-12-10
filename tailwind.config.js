@@ -25,6 +25,7 @@ module.exports = {
     			'active-color': 'var(--active-color)',
     			'offline-user-color': 'var(--offline-user-color)',
     			'light-primary-color': 'var(--light-primary-color)',
+    			'message-bg': 'var(--message-bg)',
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
     			card: {
